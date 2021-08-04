@@ -1,6 +1,7 @@
-package com.klj.ioc.annotation;
+package com.klj.konglearn.ioc.annotation;
 
-import com.klj.ioc.IUserService;
+
+import com.klj.konglearn.ioc.IUserService;
 
 public class BeanAnnotationUserService extends IUserService {
     @Override

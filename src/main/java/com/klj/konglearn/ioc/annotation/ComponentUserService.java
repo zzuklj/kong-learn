@@ -1,10 +1,8 @@
-package com.klj.ioc.annotation;
+package com.klj.konglearn.ioc.annotation;
 
-import com.klj.ioc.IUserService;
+
+import com.klj.konglearn.ioc.IUserService;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Repository;
-import org.springframework.stereotype.Service;
 
 @Component
 //@Service

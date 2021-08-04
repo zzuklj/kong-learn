@@ -1,7 +1,8 @@
-package com.klj.ioc.annotation;
+package com.klj.konglearn.ioc.annotation;
 
-import com.klj.ioc.IUserService;
-import com.klj.ioc.extension.ExtensionBeanAnnotationUserService;
+
+import com.klj.konglearn.ioc.IUserService;
+import com.klj.konglearn.ioc.extension.ExtensionBeanAnnotationUserService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

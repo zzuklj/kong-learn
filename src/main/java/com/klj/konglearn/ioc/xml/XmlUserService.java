@@ -1,6 +1,6 @@
-package com.klj.ioc.xml;
+package com.klj.konglearn.ioc.xml;
 
-import com.klj.ioc.IUserService;
+import com.klj.konglearn.ioc.IUserService;
 
 public class XmlUserService extends IUserService {
 

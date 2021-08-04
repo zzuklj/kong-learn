@@ -1,4 +1,4 @@
-package com.klj.bean.create;
+package com.klj.konglearn.create;
 
 import com.klj.ioc.annotation.BeanAnnotationUserService;
 import com.klj.ioc.annotation.ComponentUserService;

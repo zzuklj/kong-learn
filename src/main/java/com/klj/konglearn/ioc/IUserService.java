@@ -1,4 +1,4 @@
-package com.klj.ioc;
+package com.klj.konglearn.ioc;
 
 public abstract class IUserService {
     private Integer id;
