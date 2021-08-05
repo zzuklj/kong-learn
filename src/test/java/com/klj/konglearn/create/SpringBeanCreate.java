@@ -1,10 +1,10 @@
 package com.klj.konglearn.create;
 
-import com.klj.ioc.annotation.BeanAnnotationUserService;
-import com.klj.ioc.annotation.ComponentUserService;
-import com.klj.ioc.annotation.ConfigurationUserService;
-import com.klj.ioc.extension.ExtensionBeanAnnotationUserService;
-import com.klj.ioc.xml.XmlUserService;
+
+import com.klj.konglearn.ioc.annotation.BeanAnnotationUserService;
+import com.klj.konglearn.ioc.annotation.ComponentUserService;
+import com.klj.konglearn.ioc.extension.ExtensionBeanAnnotationUserService;
+import com.klj.konglearn.ioc.xml.XmlUserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -20,7 +20,7 @@ public class SpringBeanCreate {
         xmlUserService.hello();
     }
 
-    String packagePath = "com.klj.ioc.annotation";
+    String packagePath = "com.klj.konglearn.ioc";
     @Test
     public void createBeanFromComponent(){
         AnnotationConfigApplicationContext AnnotationConfigApplicationContext = new AnnotationConfigApplicationContext(packagePath);
