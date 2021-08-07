@@ -14,9 +14,11 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.boot:spring-boot-starter-webFlux'
-    implementation group: 'io.netty', name: 'netty-all', version: '4.1.65.Final'
-    implementation group: 'io.projectreactor', name: 'reactor-core', version: '3.3.18.RELEASE'
+    //implementation 'org.springframework.boot:spring-boot-starter-webFlux'
+//    implementation group: 'io.netty', name: 'netty-all', version: '4.1.65.Final'
+//    implementation group: 'io.projectreactor', name: 'reactor-core', version: '3.3.18.RELEASE'
+    implementation group: 'org.reactivestreams', name: 'reactive-streams', version: '1.0.3'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 

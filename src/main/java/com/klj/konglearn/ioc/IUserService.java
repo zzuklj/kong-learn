@@ -1,5 +1,7 @@
 package com.klj.konglearn.ioc;
 
+import org.springframework.beans.factory.annotation.Value;
+
 public abstract class IUserService {
     private Integer id;
 

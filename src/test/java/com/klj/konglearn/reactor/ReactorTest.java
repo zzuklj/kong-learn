@@ -4,7 +4,8 @@ import com.klj.konglearn.model.game.Boss;
 import com.klj.konglearn.model.game.PrimaryPlayer;
 import com.klj.konglearn.model.game.SeniorPlayer;
 import org.junit.jupiter.api.Test;
-import reactor.core.publisher.Flux;
+import org.reactivestreams.Subscriber;
+import org.reactivestreams.Subscription;
 
 public class ReactorTest {
 
@@ -19,7 +20,5 @@ public class ReactorTest {
 
     @Test
     public void FluxMonoTest(){
-        Flux<Integer> integerFlux = Flux.just(2, 5, 3, 7, 4, 1);
-        integerFlux.subscribe(System.out::println);
     }
 }

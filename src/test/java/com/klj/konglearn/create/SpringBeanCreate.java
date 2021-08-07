@@ -20,7 +20,7 @@ public class SpringBeanCreate {
         xmlUserService.hello();
     }
 
-    String packagePath = "com.klj.ioc.annotation";
+    String packagePath = "com.klj.konglearn.ioc";
     @Test
     public void createBeanFromComponent(){
         AnnotationConfigApplicationContext AnnotationConfigApplicationContext = new AnnotationConfigApplicationContext(packagePath);
