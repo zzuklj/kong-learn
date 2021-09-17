@@ -1,0 +1,17 @@
+# 通用业务jpush
+jpush:
+#  common:
+#    appKey: d54f82a5f207f773bfcommon
+#    masterSecret: b42799b962b4c66942065c71
+#    apnsProduction: false
+  #小马专用jpush
+  xm:
+    appKey: 11b6e6b35ed7479111a59fxm
+    masterSecret: 1698e6f3a12f678593616a04
+    apnsProduction: false
+# 腾讯云短信
+#sms:
+#  tencent:
+#    appId: "1400362402"
+#    appKey: "ee14fdc1f6331fa0bf4ef642ff4a8ec4"
+#    nationCode: "86"
