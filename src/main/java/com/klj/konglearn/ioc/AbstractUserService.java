@@ -2,7 +2,7 @@ package com.klj.konglearn.ioc;
 
 import org.springframework.beans.factory.annotation.Value;
 
-public abstract class IUserService {
+public abstract class AbstractUserService {
     private Integer id;
 
     private String name;

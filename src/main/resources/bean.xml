@@ -4,9 +4,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="xmlUserService" class="com.klj.konglearn.ioc.xml.XmlUserService">
-        <property name="id" value="1"></property>
+        <property name="id" value="3"></property>
         <property name="name" value="xml-klj"></property>
     </bean>
+
+    <bean id="userServiceFactoryBean" class = "com.klj.konglearn.ioc.xml.UserServiceFactoryBean"></bean>
 
     <bean id="myBeanFactoryPostProcessor" class="com.klj.konglearn.ioc.custom.MyBeanFactoryPostProcessor"></bean>
 

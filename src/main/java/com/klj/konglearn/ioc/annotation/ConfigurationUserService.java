@@ -1,13 +1,13 @@
 package com.klj.konglearn.ioc.annotation;
 
 
-import com.klj.konglearn.ioc.IUserService;
+import com.klj.konglearn.ioc.AbstractUserService;
 import com.klj.konglearn.ioc.extension.ExtensionBeanAnnotationUserService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class ConfigurationUserService extends IUserService {
+public class ConfigurationUserService extends AbstractUserService {
 
     @Override
     public void hello() {
