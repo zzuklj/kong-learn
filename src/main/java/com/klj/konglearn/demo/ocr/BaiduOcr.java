@@ -25,7 +25,8 @@ public class BaiduOcr {
         Properties properties = readTiledProperties();
         ConfigurationPropertySource source = new MapConfigurationPropertySource(properties);
         //错误示例
-        //TempProperties tempProperties = new Binder(source).bind("klj", Bindable.of(TempProperties.class)).get();
+        //todo 为啥直接这样绑定不可以，而必须是下面的绑定操作才可以？
+        //TempProperties tempProperties = new Binder(source).bind("ocr.baidu", Bindable.of(OcrBaiduProperties.class)).get();
 
         Properties bindProperties = new Binder(source).bind("ocr.baidu", Bindable.of(Properties.class)).get();
         OcrBaiduProperties orcBaiduProperties = new Binder(new MapConfigurationPropertySource(bindProperties))
