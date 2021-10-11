@@ -7,6 +7,9 @@ import org.yaml.snakeyaml.Yaml;
 import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Properties;
+
+import static com.klj.konglearn.tool.YamlProperties.readFromYaml;
 
 public class FtlConfiguration {
 
@@ -22,20 +25,8 @@ public class FtlConfiguration {
             // step2 获取模版路径
             configuration.setDirectoryForTemplateLoading(new File(TEMPLATE_PATH));
 
-            // step3 创建数据模型
-//            Map<String, Object> dataMap = new HashMap<>();
-//            Map<String, Object> jpushDataMap = new HashMap<>();
-//            dataMap.put("jpush",jpushDataMap);
-//            jpushDataMap.put("appKey", "123");
-//            jpushDataMap.put("masterSecret", "456");
-//            jpushDataMap.put("apnsProduction", false);
-//
-//            Map<String, Object> jpushXmDataMap = new HashMap<>();
-//            dataMap.put("jpush-xm",jpushXmDataMap);
-//            jpushXmDataMap.put("appKey", "123-klj-123-dssd");
-//            jpushXmDataMap.put("masterSecret", "456-klj");
-//            jpushXmDataMap.put("apnsProduction", false);
-            Map<String, Object> dataMap = readFromYaml(TEMPLATE_DATA_PATH);
+            // step3 加载数据模型
+            Properties properties = readFromYaml(TEMPLATE_DATA_PATH);
 
             // step4 加载模版文件
             Template template = configuration.getTemplate("hello.ftl");
@@ -45,17 +36,10 @@ public class FtlConfiguration {
             out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(docFile)));
 
             // step6 输出文件
-            template.process(dataMap, out);
+            template.process(properties, out);
 
         }catch (Exception e){
             System.out.println(e);
         }
-    }
-
-    private static Map<String, Object> readFromYaml(String yamlFilePath) throws FileNotFoundException {
-        File file = new File(yamlFilePath);
-        Yaml yaml = new Yaml();
-        HashMap hashMap = yaml.loadAs(new FileInputStream(file), HashMap.class);
-        return hashMap;
     }
 }
