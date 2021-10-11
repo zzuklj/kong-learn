@@ -1,4 +1,4 @@
-package com.klj.konglearn.tool;
+package com.klj.konglearn.demo;
 
 public class JavaProjectFilePath {
 

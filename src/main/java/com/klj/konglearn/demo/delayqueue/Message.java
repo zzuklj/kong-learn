@@ -1,4 +1,4 @@
-package com.klj.konglearn.datastructure.queue.delay;
+package com.klj.konglearn.demo.delayqueue;
 
 import java.util.Comparator;
 import java.util.concurrent.Delayed;

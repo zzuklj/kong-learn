@@ -1,4 +1,4 @@
-package com.klj.konglearn.tool.ocr;
+package com.klj.konglearn.demo.ocr;
 
 import com.baidu.aip.ocr.AipOcr;
 import com.klj.konglearn.properties.OcrBaiduProperties;

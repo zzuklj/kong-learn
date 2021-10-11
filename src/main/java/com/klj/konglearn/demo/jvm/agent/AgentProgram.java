@@ -1,4 +1,4 @@
-package com.klj.konglearn.jvm.agent;
+package com.klj.konglearn.demo.jvm.agent;
 
 public class AgentProgram {
     public static void main(String[] args) {

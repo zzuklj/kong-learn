@@ -1,12 +1,9 @@
-package com.klj.konglearn.ftl;
+package com.klj.konglearn.demo.ftl;
 
 import freemarker.template.Configuration;
 import freemarker.template.Template;
-import org.yaml.snakeyaml.Yaml;
 
 import java.io.*;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Properties;
 
 import static com.klj.konglearn.tool.YamlProperties.readFromYaml;

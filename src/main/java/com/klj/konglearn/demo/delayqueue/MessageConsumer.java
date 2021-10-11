@@ -1,4 +1,4 @@
-package com.klj.konglearn.datastructure.queue.delay;
+package com.klj.konglearn.demo.delayqueue;
 
 import java.time.LocalDateTime;
 import java.util.concurrent.DelayQueue;
