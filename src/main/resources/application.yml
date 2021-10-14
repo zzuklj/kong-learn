@@ -4,6 +4,10 @@ ocr:
     apiKey: bZKvTt3RgLL0YhHnTL4KrWUx
     secretKey: 2Fgdx8LCWAGVWS2VlBmuS4YQCWxevxcj
 
+kafka:
+  bootstrap-servers: 192.168.100.12:9092
+
+
 klj:
   p1: v1
   p2: v2
