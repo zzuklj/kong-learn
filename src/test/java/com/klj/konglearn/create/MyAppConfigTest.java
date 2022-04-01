@@ -11,6 +11,7 @@ public class MyAppConfigTest {
     public void init(){
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MyAppConfig.class);
         ComponentUserService userService = applicationContext.getBean(ComponentUserService.class);
-        userService.hello();
+        //userService.hello();
+        userService.testTransaction();
     }
 }

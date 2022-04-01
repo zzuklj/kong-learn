@@ -9,6 +9,8 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
 repositories {
+    maven{ url 'https://maven.aliyun.com/nexus/content/groups/public/'}
+    mavenLocal()
     mavenCentral()
 }
 
@@ -27,12 +29,23 @@ dependencies {
 
     implementation group: 'org.openjdk.jmh', name: 'jmh-core', version: '1.21'
     implementation group: 'org.openjdk.jmh', name: 'jmh-generator-annprocess', version: '1.21'
+    //compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.20'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    testAnnotationProcessor 'org.projectlombok:lombok'
+    testCompileOnly 'org.projectlombok:lombok'
 
     //implementation('org.springframework.boot:spring-boot-starter-data-mongodb')
 
     implementation group: 'org.apache.kafka', name: 'kafka-clients', version: '2.3.0'
 
     implementation ("org.springframework.data:spring-data-elasticsearch")
+
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.10.1")
+    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.12.4")
+
+    implementation group: 'com.oracle.database.jdbc', name: 'ojdbc8', version: '12.2.0.1'
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.16'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 

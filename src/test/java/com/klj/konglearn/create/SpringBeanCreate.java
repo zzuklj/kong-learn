@@ -43,7 +43,8 @@ public class SpringBeanCreate {
     public void createBeanFromBeanAnnotation(){
         AnnotationConfigApplicationContext AnnotationConfigApplicationContext = new AnnotationConfigApplicationContext(packagePath);
         BeanAnnotationUserService beanAnnotationUserService = (BeanAnnotationUserService) AnnotationConfigApplicationContext.getBean("beanAnnotationUserService");
-        beanAnnotationUserService.hello();
+        //beanAnnotationUserService.hello();
+        beanAnnotationUserService.testTransaction();
 
         ExtensionBeanAnnotationUserService extensionBeanAnnotationUserService = (ExtensionBeanAnnotationUserService) AnnotationConfigApplicationContext.getBean("extensionBeanAnnotationUserService");
         extensionBeanAnnotationUserService.hello();
