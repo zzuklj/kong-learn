@@ -1,4 +1,4 @@
-package com.klj.konglearn.demo;
+package com.klj.konglearn.demo.thread;
 
 import org.springframework.util.StopWatch;
 
