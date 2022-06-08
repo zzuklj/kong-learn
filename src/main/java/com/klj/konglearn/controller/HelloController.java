@@ -10,7 +10,7 @@ public class HelloController {
 
     @GetMapping("/hello")
     public void hello(){
-        System.out.println("hello klj!");
+        System.out.println("hello klj1!");
         System.out.println("hello jrebel!");
         IntStream.range(1,10).forEach(System.out::println);
     }
